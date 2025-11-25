@@ -24,7 +24,8 @@
         <div class="row mb-3 d-flex">
           <div class="col-md-5 col-12">
             <label for="cuenta">Card</label>
-            <input type="number" class="form-control" id="cuenta" placeholder="XXXXXXXXXXXXX" required>
+            <input type="number" class="form-control" pattern="[0-9]*" inputmode="numeric" placeholder="Introduce un número" required>
+            <!-- <input type="number" class="form-control" id="cuenta" placeholder="XXXXXXXXXXXXX" required> -->
 
             <!----------------------------------------------------------------------- 
                                   NO SE COMO QUITAR EL SPINNER DEL "type=number" SIN USAR CSS CON WEBKIT!!!!! 
@@ -84,7 +85,7 @@
           <div class="col-md-3 col-12">
             <label for="select">State</label>
             <select class="form-select" aria-label="Default select example" id="select" required>
-              <option selected>Select...</option>
+              <option selected value="">Select...</option>
               <option value="1">Spain</option>
               <option value="2">Venezuela</option>
               <option value="3">USA</option>
